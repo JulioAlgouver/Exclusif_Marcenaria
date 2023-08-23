@@ -1,0 +1,806 @@
+.container{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+
+    overflow-x: hidden;
+
+    background-color: rgb(255, 255, 255);
+}
+
+.container .menu{
+    position: absolute;
+    z-index: 1;
+}
+
+.container .content{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container .content .orcamento{
+    position: absolute;
+    display: flex;
+    top: 8vw;
+}
+
+.container .content .orcamento img{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: auto;
+}
+
+.container .content .orcamento .formulario_orcamento{
+    position: absolute;
+    display: list-item;
+
+    width: 60vw;
+    height: 30vw;
+    top: 11vw;
+}
+
+.container .content .orcamento .formulario_orcamento strong{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vw;
+
+    font-family: 'Rajdhani', sans-serif;
+    text-shadow: 0px 3px 6px #000;
+    font-size: 4vw;
+    font-weight: 700;
+    color: #D4D4D4;
+    font-style: normal;
+    text-align: center;
+    line-height: normal;
+}
+
+.container .content .orcamento .formulario_orcamento form input{
+    position: relative;
+    top: -2vw;
+    width: 35vw;
+    height: 4vw;
+
+    border-radius: 25px;
+    border: 2px solid #353131;
+    background: rgba(217, 217, 217, 0.85);
+
+
+    color: #000;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 31px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+}
+
+.container .content .orcamento .formulario_orcamento form button{
+    position: relative;
+
+    width: 25vw;
+    height: 4vw;
+    border-radius: 1.5vw;
+    background-color: rgba(114, 0, 0, 0.90);
+    border: solid 0.2vw #3F0202;
+
+    color: #FFF;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2vw;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+}
+
+.container .content .orcamento .formulario_orcamento form button:hover{
+    transition: 0.4s;
+    cursor: pointer;
+    border: solid 0.2vw #643131;
+    color: #c7a4a4;
+}
+
+.container .content .sobre{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: auto;
+
+    top: 110vh;
+}
+
+.container .content .sobre img{
+    position: relative;
+    display: flex;
+    top: 11vw;
+    width: 37vw;
+    z-index: 1;
+}
+
+.container .content .sobre .quem_somos{
+    position: absolute;
+    display: flex;
+    width: 65vw;
+    height: 55vw;
+    top: 22vw;
+    right: 0;
+
+    justify-content: center;
+}
+
+.container .content .sobre .quem_somos img{
+    position: absolute;
+    display: flex;
+    width: 65vw;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.container .content .sobre .quem_somos .title{
+    position: absolute;
+    display: flex;
+    width: 65vw;
+    height: 5vw;
+
+    justify-content: center;
+    margin-top: 2vw;
+}
+
+.container .content .sobre .quem_somos .title span{
+    color: #000;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.80);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container .content .sobre .quem_somos .title strong{
+    color: #af2323;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.80);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.container .content .sobre .quem_somos .description{
+    position: absolute;
+
+    width: 50vw;
+    height: 50vw;
+    top: 10vw;
+    text-align: justify;
+}
+
+.container .content .sobre .quem_somos .description span{
+    color: #000;
+    font-family: 'Antic';
+    font-size: 2.1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;   
+}
+
+.container .content .sobre .lineSobre{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: auto;
+    top: 75vw;
+    align-items: center;
+    justify-content: center;
+    background-color: #643131;
+}
+
+.container .content .sobre .lineSobre img{
+    position: absolute;
+    width: 80vw;
+    top: 1vw;
+}
+
+.container .content .sobre .missao{
+    position: absolute;
+    display: flex;
+
+    top: 70vw;
+    width: 50vw;
+    height: 30vw;
+
+    justify-items: center;
+}
+
+.container .content .sobre .missao img{
+    position: absolute;
+    display: flex;
+    width: 35vw;
+    height: 6vw;
+}
+
+.container .content .sobre .missao span{
+    position: absolute;
+    display: flex;
+    width: 50vw;
+
+    top: 20vw;
+    justify-content: center;
+
+    color: #000;
+    text-align: center;
+    font-family: 'Antic';
+    font-size: 1.7vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container .content .sobre .visao{
+    position: absolute;
+    display: flex;
+    right: 0;
+
+    top: 88vw;
+    width: 50vw;
+    height: 30vw;
+
+    justify-items: center;
+}
+
+.container .content .sobre .visao img{
+    position: absolute;
+    display: flex;
+    width: 35vw;
+    height: 6vw;
+    right: 0;
+}
+
+.container .content .sobre .visao span{
+    position: absolute;
+    display: flex;
+    width: 50vw;
+
+    top: 20vw;
+    justify-content: center;
+
+    color: #000;
+    text-align: center;
+    font-family: 'Antic';
+    font-size: 1.7vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container .content .sobre .valores{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 60vw;
+    top: 130vw;
+    background: url('../../images/background_valores.png');
+    background-repeat: none;
+
+    justify-content: center;
+}
+
+.container .content .sobre .valores .title{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .content .sobre .valores .title img{
+    width: 65vw;
+    top: -2.5vw;
+}
+
+.container .content .sobre .valores .content{
+    position: absolute;
+    display: flex;
+
+    width: 60vw;
+    top: 0;
+
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    z-index: 1;
+}
+
+.container .content .sobre .valores .content img{
+    width: 10vw;
+}
+
+.container .content .sobre .valores .content strong{
+    position: absolute;
+    display: flex;
+    color: #272727;
+    text-align: center;
+    font-family: 'Francois One';
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container .content .sobre .valores .content .integridade{
+    position: absolute;
+    display: flex;
+    top: -4vw;
+    left: 10vw;
+}
+
+.container .content .sobre .valores .content .integridade strong{
+    position: absolute;
+    top: 23vw;
+    left: 0;
+}
+
+.container .content .sobre .valores .content .solidariedade{
+    position: absolute;
+    display: flex;
+    top: -4vw;
+    right: 10vw;
+}
+
+.container .content .sobre .valores .content .solidariedade strong{
+    position: absolute;
+    left: -0.5vw;
+    top: 23vw;
+}
+
+.container .content .sobre .valores .content .comprometimento{
+    position: absolute;
+    display: flex;
+    top: 16vw;
+    left: 10vw;
+}
+
+.container .content .sobre .valores .content .comprometimento strong{
+    position: absolute;
+    top: 23vw;
+    left: -2.5vw;
+}
+
+.container .content .sobre .valores .content .qualidade{
+    position: absolute;
+    display: flex;
+    top: 15vw;
+    right: 10vw;
+}
+
+.container .content .sobre .valores .content .qualidade strong{
+    position: absolute;
+    top: 23vw;
+
+    width: 15vw;
+}
+
+.container .content .projetos{
+    position: absolute;
+    top: 195vw;
+}
+
+.container .content .projetos .titulo img{
+    position: absolute;
+    width: 100vw;
+    height: 50vw;
+}
+
+.container .content .projetos .titulo strong{
+    position: absolute;
+    display: flex;
+    top: 45vw;
+    width: 100vw;
+    height: 10vw;
+    background: #000;
+    justify-content: center;
+
+    color: #FFF;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container .content .projetos .fotos{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 55vw;
+    top: 53vw;
+    background-color: #000;
+}
+
+.container .content .projetos .fotos .galeria1{
+    position: relative;
+    display: flex;
+    float: left;
+    width: 25vw;
+    height: 35vw;
+    background: url('../../images/galeria1-off.jpg');
+    background-size: cover;
+    background-repeat: none;
+}
+
+.container .content .projetos .fotos .galeria1:hover{
+    background: url('../../images/galeria1-on.jpg');
+    background-size: cover;
+}
+
+.container .content .projetos .fotos .galeria2{
+    position: relative;
+    display: flex;
+    float: left;
+    width: 25vw;
+    height: 35vw;
+    background: url('../../images/galeria2-off.jpg');
+    background-size: cover;
+    background-repeat: none;
+}
+
+.container .content .projetos .fotos .galeria2:hover{
+    background: url('../../images/galeria2-on.jpg');
+    background-size: cover;
+}
+
+.container .content .projetos .fotos .galeria3{
+    position: relative;
+    display: flex;
+    float: left;
+    width: 25vw;
+    height: 35vw;
+    background: url('../../images/galeria3-off.jpg');
+    background-size: cover;
+    background-repeat: none;
+}
+
+.container .content .projetos .fotos .galeria3:hover{
+    background: url('../../images/galeria3-on.jpg');
+    background-size: cover;
+}
+
+.container .content .projetos .fotos .galeria4{
+    position: relative;
+    display: flex;
+    float: left;
+    width: 25vw;
+    height: 35vw;
+    background: url('../../images/galeria4-off.jpg');
+    background-size: cover;
+    background-repeat: none;
+}
+
+.container .content .projetos .fotos .galeria4:hover{
+    background: url('../../images/galeria4-on.jpg');
+    background-size: cover;
+}
+
+.container .content .projetos .politica{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 13vw;
+    top: 90vw;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.container .content .projetos .politica span{
+    color: #c5c5c5;
+    font-family: 'Open Sans';
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5vw;
+}
+
+.container .content .projetos .politica span button{
+    color: rgb(216, 104, 0);
+    font-family: 'Open Sans';
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5vw;
+}
+
+.container .footer{
+    position: absolute;
+    top: 300vw;
+}
+
+.show{
+    display: block !important;
+}
+
+/*--------------------------------------------------------*/
+/*CSS MOBILE*/
+
+@media (max-width:980px) {
+    .container{
+        width: 100vw;
+    }
+    
+    .container .menu{
+        z-index: 2;
+    }
+
+    .container .content{
+        width: 100vw;
+    } 
+
+    .container .content .orcamento{
+        top: 14vw;
+        height: 67vw;
+        z-index: 1;
+        background-color: #1f1d1d;
+    }
+
+    .container .content .orcamento .formulario_orcamento{
+        top: 8vw;
+        width: 100vw;
+    }
+
+    .container .content .orcamento .formulario_orcamento strong{
+        width: 60vw;
+        font-size: 8.5vw;
+        left: 2vw;
+    }
+
+    .container .content .orcamento .formulario_orcamento form input{
+        width: 80vw;
+        height: 9vw;
+        border-radius: 4vw;
+        font-size: 5.5vw;
+        top: 3vw;
+    }
+
+    .container .content .orcamento .formulario_orcamento form button{
+        width: 60vw;
+        height: 9vw;
+        top: 8vw;
+        border-radius: 3vw;
+        background-color: rgba(114, 0, 0);
+        border: solid 0.4vw #3f0202;
+        font-size: 5vw;
+    }
+
+    .container .content .sobre{
+        width: 110vw;
+        height: 75vw;
+        top: 40vw;
+        z-index: 0;
+    }
+
+    .container .content .sobre img{
+        width: 110vw;
+        height: 130vw;
+        top: 0vw;
+    }
+
+    .container .content .sobre .imageBarracao{
+        width: 110vw;
+        height: 130vw;
+        top: 0vw;
+        -webkit-mask-image: linear-gradient(to top, transparent 20%, black 45%);
+    }
+
+    .container .content .sobre .quem_somos{
+        top: 108vw;
+        width: 100vw;
+        justify-content: center;
+        left: 0;
+    }
+
+    .container .content .sobre .quem_somos img{
+        top: -15vw;
+    }
+
+    .container .content .sobre .quem_somos .title{
+        width: 100vw;
+        height: 8vw;
+    }
+
+    .container .content .sobre .quem_somos .title span{
+        width: 100vw;
+        height: 8vw;
+        font-size: 9vw;
+    }
+
+    .container .content .sobre .quem_somos .title strong{
+        width: 100vw;
+        height: 8vw;
+        font-size: 9vw;
+    }
+
+    .container .content .sobre .quem_somos .description{
+        width: 85vw;
+        top: 23vw;
+    }
+
+    .container .content .sobre .quem_somos .description span{
+        font-size: 4.2vw;
+    }
+
+    .container .content .sobre .lineSobre img{
+        top: 158vw;
+        height: 0.3vw;
+    }
+
+    .container .content .sobre .missao{
+        top: 245vw;
+    }
+
+    .container .content .sobre .missao img{
+        left: 0;
+        width: 75vw;
+        height: auto;
+    }
+
+    .container .content .sobre .missao span{
+        width: 100vw;
+        font-size: 3.7vw;
+    }
+
+    .container .content .sobre .visao{
+        right: 10vw;
+        top: 310vw;
+    }
+
+    .container .content .sobre .visao img{
+        width: 70vw;
+        height: auto;
+    }
+
+    .container .content .sobre .visao span{
+        width: 100vw;
+        font-size: 3.7vw;
+        right: 0;
+    }
+
+    .container .content .sobre .valores{
+        width: 100vw;
+        height: 125vw;
+        top: 370vw;
+    }
+
+    .container .content .sobre .valores .title img{
+        top: -4vw;
+        width: 95vw;
+        height: 8vw;
+    }
+
+    .container .content .sobre .valores .content img{
+        top: 0;
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .container .content .sobre .valores .content .integridade img{
+        top: 20vw;
+        right: 15vw;
+    }
+
+    .container .content .sobre .valores .content .integridade strong{
+        font-size: 5vw;
+        top: 48vw;
+        left: -15vw;
+    }
+
+    .container .content .sobre .valores .content .solidariedade img{
+        top: 20vw;
+        left: 15vw;
+    }
+
+    .container .content .sobre .valores .content .solidariedade strong{
+        width: 30vw;
+        font-size: 5vw;
+        top: 48vw;
+        left: 13vw;
+    }
+
+    .container .content .sobre .valores .content .comprometimento img{
+        top: 50vw;
+        right: 15vw;
+    }
+
+    .container .content .sobre .valores .content .comprometimento strong{
+        font-size: 5vw;
+        top: 80vw;
+        left: -20vw;
+    }
+
+    .container .content .sobre .valores .content .qualidade img{
+        top: 50vw;
+        left: 15vw;
+        height: 27vw;
+    }
+
+    .container .content .sobre .valores .content .qualidade strong{
+        width: 30vw;
+        font-size: 5vw;
+        top: 78vw;
+        right: -19vw;
+    }
+
+    .container .content .sobre .content{
+        width: 100vw;
+        top: 380vw;
+    }
+
+    .container .content .projetos{
+        top: 500vw;
+    }
+
+    .container .content .projetos .titulo strong{
+        width: 100vw;
+        height: 140vw;
+        top: 50vw;
+        font-size: 5.5vw;
+    }
+
+    .container .content .projetos .fotos{
+        width: 100vw;
+        top: 65vw;
+    }
+
+    .container .content .projetos .fotos .galeria1{
+        position: relative;
+        width: 100vw;
+        height: auto;
+    }
+
+    .container .content .projetos .fotos .galeria2{
+        position: relative;
+        width: 100vw;
+        height: auto;
+    }
+
+    .container .content .projetos .fotos .galeria3{
+        position: relative;
+        width: 100vw;
+        height: auto;
+    }
+
+    .container .content .projetos .fotos .galeria4{
+        position: relative;
+        width: 100vw;
+        height: auto;
+    }
+
+    .container .content .projetos .politica{
+        width: 100vw;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        top: 132vw;
+    }
+
+    .container .content .projetos .politica span{
+        width: 90vw;
+        font-size: 3.3vw;
+        line-height: 5vw;
+    }
+
+    .container .content .projetos .politica span button{
+        font-size: 3.3vw;
+        line-height: 5vw;
+    }
+
+    .container .footer{
+        top: 685vw;
+    }
+}

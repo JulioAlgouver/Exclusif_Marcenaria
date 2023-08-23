@@ -1,0 +1,75 @@
+
+@media (max-width:1000px){
+    .container_menu_dropdown .content_menu_dropdown .menu-Button button{
+        position: relative;
+        display: flex;
+        
+        width: 8vw;
+        height: 8vw;
+        top: 1.5vw;
+        right: -88vw;
+        background: url('../../images/menuDropOpen.png');
+        background-size: cover;
+        z-index: 0;
+    }
+        
+    .menu-dropswitch.active{
+        position: absolute;
+        display: flex;
+        width: 65vw;
+        opacity: 1;
+        visibility: visible;
+        top: 12.9vw;
+        right: -120vw;
+
+        z-index: 0;
+
+        background-color: #4e4e4fc7;
+        border-bottom: #1d2933c7 solid;
+        border-bottom-left-radius: 15vw;
+    }
+
+    .menu-dropswitch.active .button-close-menu{
+        position: relative;
+        display: flex;
+        width: 8vw;
+        height: 8vw;
+
+        background: url('../../images/menuDropClose.jpg');
+        background-size: cover;
+        top: -11.5vw;
+        right: -25vw;
+    }
+
+    .menu-dropswitch.active ul{
+        position: relative;
+        right: 0;
+    }
+
+    .menu-dropswitch.active ul li{
+        position: relative;
+        list-style: none;
+        text-align: right;
+        right: 15vw;
+    }
+
+    .menu-dropswitch.active ul li button span{
+        color: whitesmoke;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+        right: 0;
+    }
+
+    .menu-dropswitch{
+        opacity: 0;
+        display: none;
+    }
+
+    button{
+        background: none;
+        border: none;
+        font-size: 4.5vw;
+        font-weight: 600;
+        text-align: right;
+        height: 10vw;
+    }
+}

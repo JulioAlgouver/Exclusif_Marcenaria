@@ -1,0 +1,91 @@
+.modal{
+    background-color: rgba(210, 210, 210, 0.965);
+    display: flex;
+    position: fixed;
+    width: 68vw;
+    height: 85vh;
+    left: 200px;
+    top: 40px;
+    border-radius: 3vw;
+    padding: 1vw;
+    box-shadow: 1vw 1vw 5vw black;
+    color: black;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.modal .titulo h1{
+    position: absolute;
+    display: flex;
+    margin-left: 3vw;
+    color: rgb(44, 42, 42);
+}
+
+.modal .question{
+    position: absolute;
+    top: 8vw;
+    left: 3.5vw;
+    text-align: justify;
+}
+
+.modal .question strong{
+    position: relative;
+    display: flex;
+    width: 62vw;
+    margin-bottom: -2vw;
+
+    color: #880000;
+    text-align: justify;
+    font-family: Open Sans;
+    font-size: 1.8vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.modal .question span{
+    position: relative;
+    display: flex;
+    width: 62vw;
+    margin-bottom: 2.5vw;
+
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*------------------------------------------------------*/
+/*CSS MOBILE*/
+
+@media (max-width:980px){
+    .modal{
+        width: 85vw;
+        height: 85vh;
+        left: 7vw;
+        top: 40px;
+    }
+    
+    .modal .titulo h1{
+        font-size: 6vw;
+    }
+    
+    .modal .question{
+        width: 100vw;
+        top: 18vw;
+        left: 6vw;
+    }
+    
+    .modal .question strong{
+        width: 70vw;
+        font-size: 3vw;
+    }
+    
+    .modal .question span{
+        width: 75vw;
+        font-size: 3vw;
+    }
+    
+}

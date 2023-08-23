@@ -1,0 +1,112 @@
+.menu_container{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 8vw;
+    background: linear-gradient(180deg, #000 0%, #282828 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.menu_container .logo{
+    position: absolute;
+    display: flex;
+    width: 23vw;
+    height: 8vw;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_container .logo img{
+    width: 17vw;
+    height: 5vw;
+}
+
+.menu_container .menu_content{
+    position: absolute;
+    display: flex;
+    right: 0;
+    width: 65vw;
+    height: 10vw;
+}
+
+.menu_container .menu_content .list_menu{
+    position: absolute;
+    display: flex;
+    right: 1.5vw;
+    top: 1.5vw;
+    height: 10vw;
+
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5vw;
+    color: #AEAAAA;
+}
+
+.menu_container .menu_content .list_menu ul{
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    right: 2vw;
+}
+
+.menu_container .menu_content .list_menu a{
+    width: auto;
+    height: 3vw;
+    text-decoration: none;
+    color: #AEAAAA;
+}
+
+.menu_container .menu_content .list_menu a:hover{
+    border-bottom: solid 0.3vw #e6e6e6;
+    color: #e6e6e6;
+}
+
+.menu_container .menu_content .list_menu ul li{
+    margin-left: 3vw;
+}
+
+.menu_container .menu_content .list_menu img{
+    position: absolute;
+    display: flex;
+    width: 98%;
+    top: 5vw;
+    right: 0;
+}
+
+.menu_container .mobile_menu{
+    display: none;
+}
+
+/*----------------------------------------------------*/
+/*CSS MOBILE*/
+
+@media (max-width: 980px) {
+    .menu_container{
+        width: 100vw;
+        height: 15vw;
+    }
+
+    .menu_container .logo{
+        width: 50vw;
+        height: 15vw;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .menu_container .logo img{
+        width: 40vw;
+        height: 11vw;
+    }
+
+    .menu_container .menu_content .list_menu{
+        display: none;
+    }
+
+    .menu_container .mobile_menu{
+        position: absolute;
+        display: flex;
+        top: 2vw;
+    }
+}

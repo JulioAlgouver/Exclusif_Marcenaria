@@ -1,0 +1,264 @@
+.content_footer{
+    position: absolute;
+    width: 100vw;
+    height: 40vw;
+    background: linear-gradient(28deg, #000 0%, #100C0C 47.83%, #333 100%);
+}
+
+.content_footer .logo{
+    position: absolute;
+    display: flex;
+    width: 50vw;
+    height: 20vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_footer .logo img{
+    width: 35vw;
+}
+
+.content_footer .endereco{
+    position: absolute;
+    display: flex;
+    width: 50vw;
+    height: 20vw;
+    justify-content: center;
+    align-items: center;
+
+    top: 13vw;
+    text-align: left;
+    left: -5vw;
+}
+
+.content_footer .endereco strong{
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 1.7vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3vw;
+}
+
+.content_footer .endereco span{
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 1.7vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.content_footer .telefone{
+    position: absolute;
+    display: flex;
+
+    width: 50vw;
+    height: 5vw;
+
+    top: 31vw;
+    left: 16.5vw;
+}
+
+.content_footer .telefone img{
+    width: 4vw;
+    height: 3vw;
+}
+
+.content_footer .telefone span{
+    display: flex;
+    
+    color: #c5c5c5;
+    font-family: 'Open Sans';
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    left: 16vw;
+    padding-left: 1.5vw;
+}
+
+.content_footer .redesSociais{
+    position: absolute;
+    display: flex;
+    width: 42vw;
+    height: 12vw;
+    top: 2.5vw;
+    right: 2vw;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.1vw;
+}
+
+.content_footer .redesSociais a{
+    width: 3.5vw;
+    height: 3.5vw;
+    margin-right: 1vw;
+}
+
+.content_footer .redesSociais a img{
+    width: 3.5vw;
+    height: 3.5vw;
+    margin-right: 1vw;
+}
+
+.content_footer .redesSociais .instagram{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+}
+
+.content_footer .redesSociais .facebook{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 9vw;
+}
+
+.content_footer .redesSociais strong{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 2vw;
+}
+
+.content_footer .mapa{
+    position: absolute;
+    top: 18vw;
+    right: -5.5vw;
+    width: 50vw;
+}
+
+.content_footer .mapa iframe{
+    display: flex;
+    width: 35vw;
+    height: 18vw;
+    flex-shrink: 0;
+    top: 35vw;
+}
+
+/*------------------------------------------------------*/
+/*CSS MOBILE*/
+
+@media (max-width:1000px){
+    .content_footer{
+        width: 100vw;
+        height: 115vw;
+    }
+
+    .content_footer .logo{
+        width: 100vw;
+        height: 35vw;
+    }
+
+    .content_footer .logo img{
+        width: 70vw;
+        height: auto;
+    }
+
+    .content_footer .endereco{
+        width: 100vw;
+        height: 60vw;
+        left: 0;
+    }
+
+    .content_footer .endereco strong{
+        width: 100vw;
+        top: 10vw;
+        font-size: 5vw;
+        line-height: 6vw;
+        text-align: center;
+    }
+
+    .content_footer .endereco strong span{
+        width: 100vw;
+        height: auto;
+        font-size: 4vw;
+    }
+
+    .content_footer .mapa{
+        width: 50vw;
+        height: auto;
+        right: 0;
+        top: 80vw;
+    }
+
+    .content_footer .mapa iframe{
+        width: 45vw;
+        height: 25vw;
+        right: 0;
+    }
+
+    .content_footer .telefone{
+        width: 100vw;
+        top: 60vw;
+        left: 0;
+        justify-content: center;
+    }
+
+    .content_footer .telefone img{
+        width: 9vw;
+        height: 7vw;
+    }
+
+    .content_footer .telefone span{
+        font-size: 4.5vw;
+        font-weight: 200;
+    }
+
+    .content_footer .redesSociais{
+        width: 100vw;
+        height: auto;
+        top: 5vw;
+        left: 1vw;
+        
+        background-color: aquamarine;
+    }
+
+    .content_footer .redesSociais strong{
+        width: 100vw;
+        height: 5vw;
+        font-size: 5vw;
+        display: flex;
+        margin-top: 75vw;
+        margin-left: 5vw;
+        z-index: 2;
+    }
+
+    .content_footer .redesSociais span{
+        display: none;
+    }
+
+    .content_footer .redesSociais a{
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .content_footer .redesSociais a img{
+        width: 10vw;
+        height: 10vw;
+    }
+    
+    .content_footer .redesSociais .facebook a{
+        width: 10vw;
+        height: 10vw;
+        margin-top: 78.5vw;
+        margin-left: 28vw;
+    }
+
+    .content_footer .redesSociais .instagram a{
+        position: absolute;
+        display: flex;
+        width: 10vw;
+        height: 10vw;
+        top: 87.5vw;
+        left: 8vw;
+        z-index: 2;
+    }
+}
